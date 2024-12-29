@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Hub & Executor Status</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- FontAwesome for Icons -->
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Dark theme background */
+            color: #e0e0e0; /* Light text for contrast */
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #000000; /* Cyan-dark header */
+            border-bottom: 3px solid #98F5F9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        /* Script Container */
+        .script-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping if needed */
+            justify-content: space-between; /* Add space between items */
+        }
+
+        /* Script Box */
+        .script {
+            background: #1b262c; /* Darker background for scripts */
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            border-bottom: #98F5F9;
+            flex: 1 1 45%; /* Flex to take up 45% width, allowing 2 items per row */
+            max-width: 48%; /* Prevents scripts from stretching too much */
+        }
+
+        .script img {
+            width: 35%; /* Image takes full width of its container */
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px; /* Spacing below the image */
+        }
+
+        .script h3 {
+            margin: 0 0 10px;
+        }
+
+        .script p {
+            color: #bbe1fa;
+        }
+
+        .script button {
+            padding: 10px 15px;
+            background-color: #98F5F9;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .script button:hover {
+            background-color: #3282b8; /* Lighter cyan */
+        }
+
+        /* Executor Status Section */
+        .executor-status {
+            background-color: #1b262c;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .executor-status span {
+            font-weight: bold;
+            color: #bbe1fa; /* Cyan accent for status */
+        }
+
+        /* Icons */
+        i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+    <img src="logo.png" alt="Logo" id="logo">
+</div>
+
+<main>
+    <section>
+        <h2><i class="fas fa-scroll"></i> Available Scripts</h2>
+            <!-- Add more script boxes here -->
+            <div class="script">
+                <img src="inf.png" alt="Script 1 Image" >
+                <h3><i class="fas fa-file-code"></i>INF YELD</h3>
+                <p>loadstring(game:HttpGet('https://raw.githubusercontent.com/DarkNetworks/Infinite-Yield/main/latest.lua'))()</p>
+              
+            </div>
+        </div>
+    </section>
+
+    <section class="executor-status">
+        <h2><i class="fas fa-terminal"></i> Nam Executor Status:</h2>
+        <p>Current Status: <span id="statusText" class="status-label">🔵ONLINE</span></p>
+    </section>
+</main>
+
+<script>
+</script>
+
+</body>
+</html>
